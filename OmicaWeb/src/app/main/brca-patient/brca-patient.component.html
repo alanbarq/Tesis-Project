@@ -1,0 +1,77 @@
+<div class="container" style="min-height: 50vh;padding: 40px;">
+  <div class="row" style="display: flex; justify-content: center;">
+    <h2>Development</h2>
+    <h6>Main flow of the project.</h6>
+    <hr>
+    <img src="../../../assets/img/fullProject.png" style="height: 400px;width: 800px;">
+    <br>
+    <br>
+    <p style="margin-top: 20px;">PATRIC genomes were saved in Fasta format (file.fasta), divided in many contigs of different lengths. For this
+      research, the genomes were joined in one single string. To read and analyze the genomes, it was decided to read
+      the original genome and the genome’s complement.
+      Seven Machine Learning models were tested for both bacteria:
+      Random Forest, Adaboost, Xgboost, Decision Trees, Bagging Classifier, Support Vector Machine, KNN.
+      For the seven models I used two training and testing partitions:
+    </p>
+    <ul style="margin-left:100px;">
+      <li>
+        70% of the data for training, 30% of the data for testing.
+      </li>
+      <li>
+        80% of the data for training, 20% of the data for testing.
+      </li>
+    </ul>
+    <hr>
+    <h2>Select K-best</h2>
+
+
+  </div>
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-6">
+      <p style="text-align: justify;">
+        To score those k-mers with a higher significance to the resistant genomes, I used the SelectKBest function from scikit-learn. 
+The more significant k-mers will be used to find carbapenem (meropenem and imipenem) resistance patterns using the National Center for Biotechnology Information (NCBI) Basic Local Alignment Search Tool BLAST and NCBI GenBank.
+
+      </p>
+      <br>
+    </div>
+    <div class="col-6">
+      <img src="../../../assets/img/selectKbest.png" style="    width: -webkit-fill-available;
+          border-radius: 30px;">
+
+    </div>
+  </div>
+  <hr>
+  <h2>Dynammic Programming</h2>
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-6">
+      <img src="../../../assets/img/DP.jpg" style="    width: 500px;
+          border-radius: 30px;">
+
+    </div>
+    <div class="col-6">
+      <p style="text-align: justify;">
+        After obtaining the most significant k-mer sequences for each model, I used a Dynamic Programming algorithm for finding the k-mer modifications over the reference genome.
+For each k-mer length, I used different thresholds to validate if the k-mer was or was not within the reference genome. 
+
+
+      </p>
+      <br>
+    </div>
+    <hr style="margin-top: 6px;">
+  </div>
+
+
+  <br>
+  <div class="row"  style="margin:30px;display: flex; justify-content: center;">
+    <button class="btn btn-primary" style="width: 200px; margin-right: 20px;"
+    ><a href="main/hypo" style="color: white;">Previous page</a></button>
+    <!-- <img src="../../../assets/img/sequences.png"> -->
+    <button class="btn btn-primary" style="width: 200px;"
+    ><a href="main/results" style="color: white;">Next page</a></button>
+    </div>
+
+<br>
+
+
+</div>

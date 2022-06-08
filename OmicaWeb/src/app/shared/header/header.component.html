@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navPrincipal">
+    <div class="container">
+      <div (mouseover)="changeText=true" (mouseout)="changeText=false">
+        <a href="#" *ngIf="!changeText"><img src="../../../assets/img/npm.png" id="imgAlt"></a>
+        <a href="#" *ngIf="changeText"><img src="../../../assets/img/bacteria2.png" id="imgAlt"></a>
+      </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" id="navItem" routerLink=""
+              routerLinkActive="active">Go to Main Page</a>
+            </li>
+            <li class="nav-item"> 
+    
+            </li>
+          </ul>
+        </div>
+        <div ngbDropdown class="d-inline-block">
+            <!-- <button #btn type="button" pButton icon="pi pi-bars" label="Show" (click)="menu.toggle($event)" class="btn btn-primary">Holaa mundo</button>   
+            <p-slideMenu #menu [model]="items" [popup]="true" [viewportHeight]="250"></p-slideMenu> -->
+            <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle></button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1" style="background-color: white;">
+              <button ngbDropdownItem  routerLink=""
+              routerLinkActive="active">Go to main page</button>
+            </div>
+        </div>
+
+    </div>
+
+    
+  </nav>
+

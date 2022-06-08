@@ -1,0 +1,42 @@
+.nucleo{
+    min-height: 80vh;
+}
+
+#headerMain{
+    margin-top: 15vh;
+}
+
+
+#botones{
+    position: relative;
+    top: -130px;
+    height: 60vh;
+    background-image: url(https://uploads-ssl.webflow.com/5fcadb2af4a016ec8ccd8543/5fcadb2b8871911274d157f8_Pattern%20Dot.svg);
+    background-repeat: repeat;
+    opacity: 0.4;
+    background-size: 10px;
+    padding-top: 40px;
+    z-index: 0;
+}
+
+#botonesB{
+    top:30px;
+    position: relative;
+    z-index: 10;
+}
+
+.botonBeta{
+    margin-left: 20px;
+    width:23%;
+    height: 120px;
+    padding: 45px 40px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 0px;
+
+}
+
+#botonFinal{
+    padding-top: 0px;
+    padding-top: 30px;
+}

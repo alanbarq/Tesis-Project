@@ -1,0 +1,17 @@
+#botonSubirArchivo:hover{
+    background-color: #ccc;
+    transition: all 250ms;
+    color:#555;
+
+}
+
+#hiddenButton{
+    background-color: transparent;
+    border: transparent;
+}
+
+#hiddenButton:hover{
+    color:#555;
+    transition: all 200ms;
+    text-shadow: 2px 0 0 #fff;
+}
